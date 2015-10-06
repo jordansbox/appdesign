@@ -1,14 +1,31 @@
 <html>
   <body>
     <form action="/first_form" method="get">
-      <input type="text" name="mood" value="what's your mood?"></input>
-      <input type="range" name="how_many" min="1" max="10"></input>
-      <input type="datetime" name="when" value="2015-10-1T03:02:15Z"></input>
-      <input type="submit"></input>
+      <input type="text" name="first" value="earliest time"></input>
+      <input type="text" name="last" value="latest time"></input>
+      <input type="submit" value="Check for reports between given times"></input>
+      <hr><hr>
     </form>
     <form action="/second_form" method="get">
-      <input type="text" name="animal" value="what's your favorite shape?"></input>
-      <input type="submit"></input>
+      <input type="text" name="time" value="time (e.g., 7:00 AM)"></input>
+      <input type="text" name="tmp" value="temperature (fahrenheit)"></input>
+      <input type="text" name="dew" value="dew point(30.1)"></input>
+      <hr>
+      <input type="text" name="humid" value="humidity(7<--int)"></input>
+      <input type="text" name="pres" value="pressure(30.16)"></input>
+      <input type="text" name="vis" value="Visibility(9<--int)"></input>
+      <hr>
+      <input type="text" name="windir" value="wind direction(north, NW)"></input>
+      <input type="text" name="windsp" value="wind speed(4.5)"></input>
+      <input type="text" name="gustsp" value="time (-, 20.0"></input>
+      <hr>
+      <input type="text" name="prec" value="precipitation(n/a, 3 inches)"></input>
+      <input type="text" name="eve" value="Events"></input>
+      <input type="text" name="cond" value="conditions (clear, cloudy...)"></input>
+      <hr>
+      <input type="text" name="windirdeg" value="wind direction degrees (360)"></input>
+      <input type="text" name="date" value="date (2013-06-12 05:54:00)"></input>
+      <input type="submit" value="Insert to database"></input>
     </form>
   </body>
 </html>
